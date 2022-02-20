@@ -6,10 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/f53393d239.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <div style="display: inline-block"></div>
     <div class="card">
+      <div class="card__left">
+        <img
+          src="//unsplash.it/200/200"
+          alt="nothing"
+          class="card__leftImage"
+        />
+        <a href="#" class="card__left__arrow">
+          <i class="fa-solid fa-arrow-left-long"></i
+        ></a>
+        <!-- <div class="card__left--arrow"></div> -->
+      </div>
+      <div class="card__right">
+        <img src="//unsplash.it/200/200" alt="nothing" />
+        <i class="fa-solid fa-arrow-right card__right__arrow"></i>
+      </div>
+
       <img
         class="card__img"
         src="https://www.riotgames.com/darkroom/1440/b71ace4a13f127d6c79f6f3872589416:702844724d49733d39518eda627a3bd6/london.jpg"
@@ -17,6 +36,29 @@
       />
 
       <h1 class="card__header card__header--style">London</h1>
+
+      <div class="card__innerCard card__innerCard--style">
+        <div class="card__details">
+          <li class="card__titles">Country</li>
+          <li class="card__subtitles">England</li>
+        </div>
+        <div class="card__column"></div>
+        <div class="card__details">
+          <li class="card__titles">Districts</li>
+          <li class="card__subtitles">32</li>
+        </div>
+        <div class="card__column"></div>
+        <div class="card__details">
+          <li class="card__titles">Populaton</li>
+          <li class="card__subtitles">8,538,689</li>
+        </div>
+      </div>
+      <div class="card__button">
+        <button class="card__button--style">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Location</span>
+        </button>
+      </div>
     </div>
   </body>
 </html>
